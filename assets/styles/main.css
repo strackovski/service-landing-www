@@ -7,13 +7,8 @@ section {
     padding: 40px 0 72px 0;
 }
 
-body {
-    font-family: Pontano, Arial, sans-serif;
-}
-
-a {
-    color: #a19b00;
-}
+body { font-family: Pontano, Arial, sans-serif; }
+a { color: #a19b00; }
 
 a:hover {
     color: #8caebf;
@@ -33,9 +28,7 @@ h2.cta {
     text-shadow: #333 1px 1px;
 }
 
-p {
-    font-family: Pontano, Arial, sans-serif;
-}
+p { font-family: Pontano, Arial, sans-serif; }
 
 .section-1 {
     height: 540px;
@@ -592,7 +585,12 @@ p {
 }
 
 .details .social a:hover {
-    color: #8caebf;
+    color: #f8f8f8;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
 }
 
 .details .social p,
@@ -774,4 +772,19 @@ p {
 
 .detail > span {
     display: block;
+}
+
+.footer li {
+    text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+    .footer ul {
+        border-bottom: 1px solid #1f6b92;
+        padding-bottom: 8px;
+    }
+
+    .footer .row div:last-child ul {
+        border-bottom: none;
+    }
 }

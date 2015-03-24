@@ -24,11 +24,9 @@ $(document).ready(function () {
                 $('.mobile-nav').removeClass('fixed');
             }
         }
-    })
+    });
 
     $(window).resize(function () {
-
-
         if ($('body').hasClass('expanded')) {
             var win_width = $(window).width();
             if (win_width > 740) {
