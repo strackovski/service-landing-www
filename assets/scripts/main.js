@@ -4,6 +4,9 @@
  * See https://github.com/strackovski/service-biz-www
  */
 $(document).ready(function () {
+    var mainMenu = $('.main-menu');
+    var mobileNav = $('.mobile-nav');
+
     $('.nav-btn').on('click', function (e) {
         e.preventDefault();
         $('body').toggleClass('expanded');
@@ -13,15 +16,15 @@ $(document).ready(function () {
         var win = $(window);
         var scrollTop =  win.scrollTop();
         if (scrollTop > 120) {
-            if ($('.main-menu').hasClass('fixed')) {
+            if (mainMenu.hasClass('fixed')) {
             } else {
-                $('.main-menu').addClass('fixed');
-                $('.mobile-nav').addClass('fixed');
+                mainMenu.addClass('fixed');
+                mobileNav.addClass('fixed');
             }
         } else {
-            if ($('.main-menu').hasClass('fixed')) {
-                $('.main-menu').removeClass('fixed');
-                $('.mobile-nav').removeClass('fixed');
+            if (mainMenu.hasClass('fixed')) {
+                mainMenu.removeClass('fixed');
+                mobileNav.removeClass('fixed');
             }
         }
     });
