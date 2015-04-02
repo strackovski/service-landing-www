@@ -2,6 +2,8 @@ Service-Business Landing Site Template
 =========
 A modern landing web site design for a small service type business site.
 
+![Screens](http://www.envee.eu/projects/feats/insure-git-feat.gif)
+
 Features
 ----
    * Attractive landing page with full-height hero for CTA content
